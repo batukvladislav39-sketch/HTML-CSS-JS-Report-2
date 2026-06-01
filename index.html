@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpicySpace — Дослідження Космічних Об'єктів</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container">
+    <div class="header__inner">
+
+      <a href="#" class="logo" aria-label="SpicySpace — перейти на головну">
+        <svg class="logo__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" stroke="#7b2fff" stroke-width="1.5"/>
+          <circle cx="16" cy="16" r="6" fill="#7b2fff" opacity=".8"/>
+          <ellipse cx="16" cy="16" rx="15" ry="5" stroke="#c76bff" stroke-width="1" opacity=".5"/>
+          <circle cx="24" cy="9" r="2" fill="#e040fb"/>
+        </svg>
+        SpicySpace
+      </a>
+
+      <nav class="header__nav" aria-label="Головна навігація">
+        <a href="#research">Дослідження</a>
+        <a href="#slider-section">Відкриття</a>
+        <a href="#how">Як це робимо</a>
+        <a href="#news">Новини</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
+
+      <div class="header__controls">
+        <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__planet" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero__content">
+        <span class="hero__eyebrow">✦ SpicySpace Research</span>
+        <h1 class="hero__title">
+          Дослідження<br>
+          <span>Космічних</span><br>
+          Об'єктів
+        </h1>
+        <p class="hero__desc">
+          Вивчаємо простори Всесвіту, аналізуємо дані галактик і відкриваємо таємниці, що захоплюють уяву людства.
+        </p>
+        <div class="hero__actions">
+          <button class="btn btn--primary" data-modal-open>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            Дослідити об'єкти
+          </button>
+          <a href="#research" class="btn btn--outline">Дізнатись більше</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="research" id="research">
+    <div class="container">
+      <h2 class="section-title reveal">Що ми досліджуємо</h2>
+      <div class="research__grid">
+
+        <article class="research-card reveal">
+          <img class="research-card__img" src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=600&q=80" alt="Галактики" loading="lazy"/>
+          <div class="research-card__body">
+            <h3 class="research-card__title">Галактики</h3>
+            <p class="research-card__desc">Досліджуємо структуру, еволюцію та взаємодію галактик у найвіддаленіших куточках Всесвіту.</p>
+            <a href="#" class="research-card__link">Докладніше →</a>
+          </div>
+        </article>
+
+        <article class="research-card reveal">
+          <img class="research-card__img" src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?w=600&q=80" alt="Планети" loading="lazy"/>
+          <div class="research-card__body">
+            <h3 class="research-card__title">Планети</h3>
+            <p class="research-card__desc">Аналізуємо екзопланети та об'єкти Сонячної системи, шукаючи умови придатні для життя.</p>
+            <a href="#" class="research-card__link">Докладніше →</a>
+          </div>
+        </article>
+
+        <article class="research-card reveal">
+          <img class="research-card__img" src="https://images.unsplash.com/photo-1517976487492-5750f3195933?w=600&q=80" alt="Астероїди" loading="lazy"/>
+          <div class="research-card__body">
+            <h3 class="research-card__title">Астероїди</h3>
+            <p class="research-card__desc">Відстежуємо траєкторії та склад астероїдів для прогнозування потенційних загроз Землі.</p>
+            <a href="#" class="research-card__link">Докладніше →</a>
+          </div>
+        </article>
+
+        <article class="research-card reveal">
+          <img class="research-card__img" src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=600&q=80" alt="Туманності" loading="lazy"/>
+          <div class="research-card__body">
+            <h3 class="research-card__title">Туманності</h3>
+            <p class="research-card__desc">Вивчаємо туманності — колиски зоряного народження та залишки наднових зір.</p>
+            <a href="#" class="research-card__link">Докладніше →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="slider-section" id="slider-section">
+    <div class="container">
+      <h2 class="section-title reveal">Наші відкриття</h2>
+      <div class="slider">
+        <div id="sliderTrack" class="slider__track">
+
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1200&q=80" alt="Галактика Андромеди"/>
+            <div class="slide__caption">
+              <h3>Галактика Андромеди</h3>
+              <p>Найближча до нас спіральна галактика на відстані 2.5 млн світлових років</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?w=1200&q=80" alt="Юпітер"/>
+            <div class="slide__caption">
+              <h3>Юпітер зблизька</h3>
+              <p>Найбільша планета Сонячної системи з понад 90 відомими супутниками</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?w=1200&q=80" alt="Пояс астероїдів"/>
+            <div class="slide__caption">
+              <h3>Пояс астероїдів</h3>
+              <p>Мільйони кам'яних об'єктів між орбітами Марса і Юпітера</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=1200&q=80" alt="Туманність Оріона"/>
+            <div class="slide__caption">
+              <h3>Туманність Оріона</h3>
+              <p>Одна з найяскравіших туманностей, видима неозброєним оком</p>
+            </div>
+          </div>
+
+        </div>
+        <button id="sliderPrev" class="slider__btn slider__btn--prev" aria-label="Попередній слайд">&#8249;</button>
+        <button id="sliderNext" class="slider__btn slider__btn--next" aria-label="Наступний слайд">&#8250;</button>
+        <div id="sliderDots" class="slider__dots" role="tablist" aria-label="Навігація слайдера"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="container">
+      <h2 class="section-title reveal">Як ми це робимо</h2>
+      <div class="how__steps">
+
+        <div class="how__step reveal">
+          <div class="how__step-icon">
+            🔭
+            <span class="how__step-num">1</span>
+          </div>
+          <h3 class="how__step-title">Спостереження</h3>
+          <p class="how__step-desc">Проводимо цілодобові спостереження за об'єктами у різних діапазонах спектру.</p>
+        </div>
+
+        <div class="how__step reveal">
+          <div class="how__step-icon">
+            📡
+            <span class="how__step-num">2</span>
+          </div>
+          <h3 class="how__step-title">Збір даних</h3>
+          <p class="how__step-desc">Отримуємо та систематизуємо масиви астрономічних даних з різних джерел.</p>
+        </div>
+
+        <div class="how__step reveal">
+          <div class="how__step-icon">
+            📊
+            <span class="how__step-num">3</span>
+          </div>
+          <h3 class="how__step-title">Аналіз</h3>
+          <p class="how__step-desc">Застосовуємо передові алгоритми машинного навчання для обробки та інтерпретації даних.</p>
+        </div>
+
+        <div class="how__step reveal">
+          <div class="how__step-icon">
+            🌟
+            <span class="how__step-num">4</span>
+          </div>
+          <h3 class="how__step-title">Відкриття</h3>
+          <p class="how__step-desc">Публікуємо результати досліджень і ділимося відкриттями зі світовою науковою спільнотою.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="news" id="news">
+    <div class="container">
+      <h2 class="section-title reveal">Останні новини</h2>
+      <div class="news__grid">
+
+        <article class="news-card reveal">
+          <img class="news-card__img" src="https://images.unsplash.com/photo-1614314107768-6018061b5b72?w=600&q=80" alt="Нові відкриття супутника Юпітера" loading="lazy"/>
+          <div class="news-card__body">
+            <span class="news-card__tag">Планетологія</span>
+            <h3 class="news-card__title">Нові відкриття супутника Юпітера</h3>
+            <p class="news-card__desc">Вчені виявили нові ознаки гідротермальної активності під кригою Європи, що може вказувати на існування життя.</p>
+          </div>
+        </article>
+
+        <article class="news-card reveal">
+          <img class="news-card__img" src="https://images.unsplash.com/photo-1534294668821-28a3054f4256?w=600&q=80" alt="Знімок чорної діри" loading="lazy"/>
+          <div class="news-card__body">
+            <span class="news-card__tag">Астрофізика</span>
+            <h3 class="news-card__title">Знімок наднадзвичайної чорної діри</h3>
+            <p class="news-card__desc">Телескоп отримав детальніший знімок горизонту подій чорної діри у центрі нашої галактики.</p>
+          </div>
+        </article>
+
+        <article class="news-card reveal">
+          <img class="news-card__img" src="https://images.unsplash.com/photo-1573588028698-f4759befb09a?w=600&q=80" alt="Марсохід передає нові дані" loading="lazy"/>
+          <div class="news-card__body">
+            <span class="news-card__tag">Місії</span>
+            <h3 class="news-card__title">Марсохід передає нові дані</h3>
+            <p class="news-card__desc">Perseverance зібрав унікальні зразки ґрунту, що відкривають нові факти про геологічну історію Марса.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="about">
+    <div class="container">
+      <div class="cta__inner">
+        <h2 class="cta__title reveal">Приєднуйтесь до нашої місії</h2>
+        <p class="cta__desc reveal">До наступного запуску телескопа залишилось:</p>
+        <div class="countdown reveal">
+          <div class="countdown__item"><span id="timerDays">00</span><small>Днів</small></div>
+          <div class="countdown__item"><span id="timerHours">00</span><small>Годин</small></div>
+          <div class="countdown__item"><span id="timerMins">00</span><small>Хвилин</small></div>
+          <div class="countdown__item"><span id="timerSecs">00</span><small>Секунд</small></div>
+        </div>
+        <div class="reveal">
+          <button class="btn btn--primary" data-modal-open>Підписатись до дослідження</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" id="contacts">
+  <div class="container">
+    <div class="footer__grid">
+
+      <div class="footer__brand">
+        <a href="#" class="logo" aria-label="SpicySpace">
+          <svg class="logo__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <circle cx="16" cy="16" r="15" stroke="#7b2fff" stroke-width="1.5"/>
+            <circle cx="16" cy="16" r="6" fill="#7b2fff" opacity=".8"/>
+            <ellipse cx="16" cy="16" rx="15" ry="5" stroke="#c76bff" stroke-width="1" opacity=".5"/>
+            <circle cx="24" cy="9" r="2" fill="#e040fb"/>
+          </svg>
+          SpicySpace
+        </a>
+        <p>Досліджуємо Всесвіт, щоб розширити межі людського розуміння та відкрити нові горизонти науки.</p>
+      </div>
+
+      <div>
+        <p class="footer__col-title">Навігація</p>
+        <nav aria-label="Навігація футера">
+          <ul class="footer__links">
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#research">Дослідження</a></li>
+            <li><a href="#how">Як ми це робимо</a></li>
+            <li><a href="#news">Новини</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <p class="footer__col-title">Ресурси</p>
+        <nav aria-label="Ресурси сайту">
+          <ul class="footer__links">
+            <li><a href="#">Статті</a></li>
+            <li><a href="#">Публікації</a></li>
+            <li><a href="#">Телескопи</a></li>
+            <li><a href="#">Місії</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__contacts">
+        <p class="footer__col-title">Контакти</p>
+        <p>Лиман, вул. Космічна, 42</p>
+        <p><a href="tel:+380001234567">+38 000 123-45-67</a></p>
+        <p><a href="mailto:info@spicyspace.ua">info@spicyspace.ua</a></p>
+        <p>Пн–Пт, 09:00–18:00</p>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2025 SpicySpace. Всі права захищені.</span>
+      <nav aria-label="Юридична навігація">
+        <ul class="footer__legal">
+          <li><a href="#">Конфіденційність</a></li>
+          <li><a href="#">Умови використання</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <button class="modal__close" id="closeModal" aria-label="Закрити вікно">✕</button>
+    <h2 class="modal__title" id="modalTitle">Підписатись до дослідження</h2>
+    <form class="modal__form" id="contactForm" novalidate>
+      <div class="form-group">
+        <label for="name">Ваше ім'я</label>
+        <input type="text" id="name" name="name" placeholder="Іван Іваненко" autocomplete="name"/>
+        <span class="form-error" id="nameError">Будь ласка, введіть своє ім'я</span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="ivan@example.com" autocomplete="email"/>
+        <span class="form-error" id="emailError">Введіть коректний email (наприклад: user@domain.com)</span>
+      </div>
+      <div class="form-group">
+        <label for="message">Повідомлення</label>
+        <textarea id="message" name="message" placeholder="Розкажіть, чим вас цікавить космос…"></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;">Надіслати</button>
+    </form>
+  </div>
+</div>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<nav class="drawer" id="drawer" aria-label="Мобільне меню">
+  <button class="drawer__close" id="drawerClose" aria-label="Закрити меню">✕</button>
+  <a href="#research">Дослідження</a>
+  <a href="#slider-section">Відкриття</a>
+  <a href="#how">Як це робимо</a>
+  <a href="#news">Новини</a>
+  <a href="#contacts">Контакти</a>
+</nav>
+
+<div class="cookie-bar" id="cookieBar" role="region" aria-label="Сповіщення про cookie">
+  <p>🍪 Ми використовуємо cookie для покращення вашого досвіду на сайті.</p>
+  <div class="cookie-bar__actions">
+    <button class="btn btn--primary" id="cookieAccept">Прийняти</button>
+    <button class="btn btn--outline" id="cookieDecline">Відхилити</button>
+  </div>
+</div>
+
+<button class="go-top" id="goTop" aria-label="Прокрутити вгору">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
