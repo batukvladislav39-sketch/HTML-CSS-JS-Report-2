@@ -1,7 +1,7 @@
 "use strict";
  
 const header = document.querySelector('#header');
-const goTop  = document.querySelector('#goTop');
+const goTop = document.querySelector('#goTop');
 
 window.addEventListener('scroll', () => {
   header.classList.toggle('scrolled', window.scrollY > 20);
@@ -11,8 +11,8 @@ window.addEventListener('scroll', () => {
 
 goTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-const burger       = document.querySelector('#burger');
-const drawer       = document.querySelector('#drawer');
+const burger = document.querySelector('#burger');
+const drawer = document.querySelector('#drawer');
 const drawerOverlay = document.querySelector('#drawerOverlay');
 
 function openDrawer() {
@@ -106,22 +106,10 @@ document.querySelector('#cookieDecline').addEventListener('click', () => {
   cookieBar.classList.remove('visible');
 });
 
-const eventDate = new Date('2026-03-20T00:00:00');
-function updateTimer() {
-  const diff = eventDate - new Date();
-  if (diff <= 0) return;
-  document.querySelector('#timerDays').textContent  = String(Math.floor(diff / 86400000)).padStart(2, '0');
-  document.querySelector('#timerHours').textContent = String(Math.floor((diff % 86400000) / 3600000)).padStart(2, '0');
-  document.querySelector('#timerMins').textContent  = String(Math.floor((diff % 3600000) / 60000)).padStart(2, '0');
-  document.querySelector('#timerSecs').textContent  = String(Math.floor((diff % 60000) / 1000)).padStart(2, '0');
-}
-updateTimer();
-setInterval(updateTimer, 1000);
-
-const track       = document.querySelector('#sliderTrack');
-const slides      = document.querySelectorAll('.slide');
+const track = document.querySelector('#sliderTrack');
+const slides = document.querySelectorAll('.slide');
 const dotsContainer = document.querySelector('#sliderDots');
-let currentSlide  = 0;
+let currentSlide = 0;
 const totalSlides = slides.length;
 
 slides.forEach((_, i) => {
